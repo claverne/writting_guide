@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Commencer à Écrire</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      background: linear-gradient(to bottom, #fef9f4, #f3ece7);
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+      background-color: #fff3e6;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      font-style: italic;
+    }
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1rem;
+    }
+    .tool {
+      position: relative;
+      margin-bottom: 2rem;
+      padding: 1rem 1rem 1rem 4.5rem;
+      border-left: 5px solid #f5c28b;
+      background-color: #ffffff;
+      transition: transform 0.2s ease-in-out;
+    }
+    .tool:hover {
+      transform: translateX(5px);
+    }
+    .tool h2 {
+      margin-top: 0;
+      color: #a45d28;
+    }
+    .tool p {
+      margin: 0.3rem 0;
+    }
+    .tool img.logo {
+      position: absolute;
+      top: 1.2rem;
+      left: 1rem;
+      width: 32px;
+      height: 32px;
+    }
+    .price-tag {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      font-weight: bold;
+      font-size: 0.9rem;
+      color: #fff;
+    }
+    .price-neutral {
+      background-color: #f5c28b;
+    }
+    .price-freemium {
+      background-color: #6aa095;
+    }
+    .price-free {
+      background-color: #7db87d;
+    }
+    .tags {
+      margin-bottom: 0.5rem;
+    }
+    .tag {
+      display: inline-block;
+      padding: 0.3rem 0.6rem;
+      margin-right: 0.5rem;
+      border-radius: 15px;
+      font-size: 0.75rem;
+      font-weight: bold;
+      color: #fff;
+    }
+    .tag.debutant { background-color: #7db87d; }
+    .tag.intermediaire { background-color: #6aa095; }
+    .tag.expert { background-color: #a56cc1; }
+    .tag.intuitif { background-color: #f6a96d; }
+    .tag.visuel { background-color: #4f9ca6; }
+    .tag.structure { background-color: #f28585; }
+    .tag.spontane { background-color: #f9ca24; }
+    .tag.concentre { background-color: #a29bfe; }
+    .toggle-list {
+      list-style: none;
+      padding-left: 1rem;
+    }
+    .toggle-list li::before {
+      content: "\f14a"; /* FontAwesome check-square */
+      font-family: "Font Awesome 6 Free";
+      font-weight: 900;
+      margin-right: 0.5rem;
+      color: #7db87d;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-style: italic;
+      background-color: #fef1e1;
+    }
+  </style>
+</head>
+<body>
+  <header class="fade-in">
+    <h1>Des outils pour t'aider à écrire</h1>
+    <p>Tu n’as rien à prouver. Tu peux juste essayer.</p>
+  </header>
+  <div class="container fade-in">
+
+    <div class="tool">
+      <img src="https://www.dabblewriter.com/icons/favicon-96x96.png" alt="Dabble Logo" class="logo">
+      <div class="price-tag price-neutral">~8€/mois</div>
+      <h2><a href="https://www.dabblewriter.com" target="_blank" style="color: inherit; text-decoration: none;">Dabble</a></h2>
+      <div class="tags">
+        <span class="tag debutant">Débutant</span>
+        <span class="tag intuitif">Intuitif</span>
+      </div>
+      <p><strong>Avantages :</strong> Interface intuitive, facile à prendre en main.</p>
+      <p><strong>Inconvénients :</strong> Moins adapté aux projets très complexes.</p>
+      <ul class="toggle-list">
+        <li>Rédiger des chapitres dans une interface fluide, sans surcharge</li>
+        <li>Créer facilement des fiches personnages et lieux accessibles en un clic</li>
+        <li>Organiser les scènes par glisser-déposer dans la structure du roman</li>
+        <li>Suivre sa progression avec des objectifs d’écriture intégrés</li>
+      </ul>
+      <p><em>Choisis cette solution pour écrire ton premier roman en toute simplicité.</em></p>
+    </div>
+
+    <div class="tool">
+      <img src="https://campfiretechnology.com/favicon.ico" alt="Campfire Logo" class="logo">
+      <div class="price-tag price-freemium">Freemium</div>
+      <h2><a href="https://www.campfirewriting.com" target="_blank" style="color: inherit; text-decoration: none;">Campfire Write</a></h2>
+      <div class="tags">
+        <span class="tag intermediaire">Intermédiaire</span>
+        <span class="tag visuel">Visuel</span>
+      </div>
+      <p><strong>Avantages :</strong> Organisation très poussée, relations visuelles.</p>
+      <p><strong>Inconvénients :</strong> Complexité d'utilisation au début.</p>
+      <ul class="toggle-list">
+        <li>Créer une carte mentale des personnages avec des fiches connectées</li>
+        <li>Visualiser les relations entre les éléments (personnages, lieux, objets, événements)</li>
+        <li>Créer une chronologie interactive et personnalisable pour suivre l'évolution de l'intrigue</li>
+        <li>Organiser les chapitres et arcs narratifs dans des modules séparés</li>
+        <li>Associer des éléments (lieux, objets, cultures) à chaque scène pour garder une cohérence globale</li>
+      </ul>
+      <p><em>Choisis cette solution pour structurer un univers riche et complexe.</em></p>
+    </div>
+
+    <div class="tool">
+      <img src="https://www.livingwriter.com/assets/img/favicon.png" alt="LivingWriter Logo" class="logo">
+      <div class="price-tag price-neutral">~10€/mois</div>
+      <h2><a href="https://www.livingwriter.com" target="_blank" style="color: inherit; text-decoration: none;">LivingWriter</a></h2>
+      <div class="tags">
+        <span class="tag intermediaire">Débutant à Intermédiaire</span>
+        <span class="tag structure">Structuré</span>
+      </div>
+      <p><strong>Avantages :</strong> Modèles narratifs intégrés, cloud.</p>
+      <p><strong>Inconvénients :</strong> Moins libre pour personnaliser.</p>
+      <ul class="toggle-list">
+        <li>Utiliser un modèle narratif (comme le voyage du héros, la structure en trois actes...)</li>
+        <li>Organiser ses chapitres selon une trame prédéfinie</li>
+        <li>Décomposer l'histoire en scènes pour garder le fil conducteur</li>
+        <li>Accéder à ses écrits depuis n'importe quel appareil grâce au cloud</li>
+      </ul>
+      <p><em>Choisis cette solution pour t'appuyer sur une structure guidée.</em></p>
+    </div>
+
+    
+
+    <div class="tool">
+      <img src="https://portableapps.com/files/images/focuswriter_64.png" alt="FocusWriter Logo" class="logo">
+      <div class="price-tag price-free">Gratuit</div>
+      <h2><a href="https://gottcode.org/focuswriter/" target="_blank" style="color: inherit; text-decoration: none;">FocusWriter</a></h2>
+      <div class="tags">
+        <span class="tag debutant">Débutant</span>
+        <span class="tag concentre">Concentré</span>
+      </div>
+      <p><strong>Avantages :</strong> Écriture plein écran, ambiance immersive.</p>
+      <p><strong>Inconvénients :</strong> Aucune fonction de structuration ou d’organisation. L'interface est aussi assez basique et peu engageante visuellement.</p>
+      <ul class="toggle-list">
+        <li>Écriture en plein écran (masque toute interface pour une immersion totale)</li>
+        <li>Thèmes personnalisables pour créer un environnement de travail apaisant</li>
+        <li>Sons d’ambiance optionnels (pluie, feu, machine à écrire…)</li>
+        <li>Minuteur Pomodoro intégré pour alterner phases d’écriture et de repos</li>
+        <li>Statistiques de mots en direct, sans interface envahissante</li>
+      </ul>
+      <p><em>Choisis cette solution pour écrire sans distractions.</em></p>
+    </div>
+
+  </div>
+  <footer class="fade-in">
+    <p>Si un de ces outils te parle, je serai heureuse de t'aider à le découvrir ou de t'offrir un coup de pouce pour t'y lancer. À ton rythme, à ta façon.</p>
+  </footer>
+</body>
+</html>
